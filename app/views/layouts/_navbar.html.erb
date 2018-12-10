@@ -14,10 +14,10 @@
         <ul class="nav navbar-nav navbar-right">
           <% if logged_in? %>
             <li>
-              <a href="#">
-                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                アイテムを追加
-                </a>
+                <%= link_to new_item_path do %>
+                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    アイテムを追加
+                <% end %>
             </li>
 
             <li class="dropdown">
